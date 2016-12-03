@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name_en">WeRecommend.rf</string>
+    <string name="app_name_ru">Рекомендуем.рф</string>
+    <string name="bebas_neue_bold_font">fonts/BebasNeue Bold.ttf</string>
+
+    <!--<string name="get_contacts">Загрузка данных из записной книги...</string>-->
+
+    <string name="error">Ошибка.</string>
+
+    <string name="license_path">license/license.txt</string>
+    <string name="license">Лицензионное соглашение.</string>
+
+    <string name="agree">Согласен</string>
+    <string name="not_agree">Не согласен</string>
+
+    <string name="create_user">Регистрация пользователя</string>
+    <string name="authorize_user">Авторизация</string>
+
+    <string name="load_text">Загрузка</string>
+
+    <string name="signup_token">kYu8oshKp17_jpgp73cyXDDSs8ayEFwt</string>
+
+    <string name="signup_success">Регистрация прошла успешно.</string>
+    <string name="authorize_success">Пользователь найден</string>
+    <string name="authorize_error">Пользователь не найден</string>
+
+    <string name="synchronizing_contacts">Синхронизация контактов</string>
+    <string name="synchronizing_success">Синхронизация прошла успешно</string>
+
+    <string name="ok_text">Хорошо</string>
+
+    <string name="load_phone_contacts">Загрузка данных из записной книги</string>
+
+    <string name="empty_contacts_list">Записная книга пуста. Ни один контакт не получен.</string>
+    <string name="no_contacts_list_access">Не удалось получить доступ к записной книге телефона. Измените вручную настройки безопасности и перезапустите приложение.</string>
+    <string name="get_user_id_error">Не удалось определить пользователя. Удалите данные сохраненные приложением и перезапустите его.</string>
+    <string name="server_error">Не удалось получить ответ сервера. Перезапустите приложение.</string>
+
+    <string name="no_hash_tags_error">Не удалось получить хеш-теги.</string>
+
+    <string name="rate_text">Рейтинг</string>
+    <string name="choose_text">Выбрать</string>
+    <string name="reviews_sum_text">Отзывов</string>
+
+    <string name="about_me_text">О себе</string>
+    <string name="portfolio_text">Портфолио</string>
+    <string name="prices_text">Цены</string>
+    <string name="reviews_text">Отзывы</string>
+
+    <string name="executor_name_text">Исполнитель: ФИО/Наименование</string>
+    <string name="your_manager_text">Ваш менеджер:</string>
+    <string name="last_first_name_text">ФИО</string>
+    <string name="executor_tags_text">Теги исполнителя: Значение отсуствует</string>
+    <string name="executor_phone_text">Телефон исполнителя: Значение отсуствует</string>
+    <string name="executor_email_text">Эл. почта исполнителя: Значение отсуствует</string>
+    <string name="executor_skype_text">Skype исполнителя: Значение отсуствует</string>
+    <string name="executor_job_time_text">Рабочее время исполнителя: Значение отсуствует</string>
+
+    <string name="no_data_text">Данных нет</string>
+
+    <string name="no_value_text">Значение отсуствует</string>
+
+    <string name="read_contacts_allow_text">Приложению необходим доступ к телефонной книге. Предоставить его?</string>
+
+</resources>

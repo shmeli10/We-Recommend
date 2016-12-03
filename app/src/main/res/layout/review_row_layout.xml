@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ReviewRow_ContainerLL"
+    style="@style/MWV">
+
+    <LinearLayout
+        android:id="@+id/ReviewRow_ReviewDataLL"
+        style="@style/TabRow_LL">
+
+        <LinearLayout
+        android:id="@+id/ReviewRow_ReviewDataColumn1LL"
+        style="@style/WWV">
+
+            <TextView
+                android:id="@+id/ReviewRow_ReviewDateTV"
+                style="@style/ReviewRow_ReviewDate_TV"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ReviewRow_ReviewDataColumn2LL"
+            style="@style/WWV"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ReviewRow_ReviewerAvatarIV"
+                style="@style/ReviewRow_ReviewerAvatar_IV" />
+
+        <!--<LinearLayout style="@style/WWV">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/ReviewRow_ReviewerAvatarIV"-->
+                    <!--style="@style/ReviewRow_ReviewerAvatar_IV" />-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout style="@style/WWV">-->
+
+                <!--<View style="@style/VLine_Grey" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+        <!--<FrameLayout-->
+            <!--android:id="@+id/ReviewRow_ReviewDataColumn2LL"-->
+            <!--style="@style/WW"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp">-->
+
+            <!--<View-->
+                <!--style="@style/VLine_Grey"-->
+                <!--android:layout_gravity="center_horizontal"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/ReviewRow_ReviewerAvatarIV"-->
+                <!--style="@style/ReviewRow_ReviewerAvatar_IV" />-->
+
+        <!--</FrameLayout>-->
+        <LinearLayout
+            android:id="@+id/ReviewRow_ReviewDataColumn3LL"
+            style="@style/WWV">
+
+            <LinearLayout
+                android:id="@+id/ReviewRow_ReviewHeaderLL"
+                style="@style/WWV">
+
+                <TextView
+                    android:id="@+id/ReviewRow_ReviewerNameTV"
+                    style="@style/ReviewRow_ReviewText_TV"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ReviewRow_ReviewBodyLL"
+                style="@style/WWV">
+
+                <TextView
+                    android:id="@+id/ReviewRow_ReviewTextTV"
+                    style="@style/ReviewRow_ReviewText_TV"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+                <LinearLayout
+                    android:id="@+id/ReviewRow_PhotoContainerLL"
+                    style="@style/WWV"
+                    android:layout_gravity="left">
+
+                    <!--<ImageView-->
+                        <!--style="@style/ReviewRow_PortfolioImage_IV"-->
+                        <!--android:src="@drawable/portfolio_1"/>-->
+                    <!--<ImageView-->
+                        <!--style="@style/ReviewRow_PortfolioImage_IV"-->
+                        <!--android:src="@drawable/portfolio_2"/>-->
+                    <!--<ImageView-->
+                        <!--style="@style/ReviewRow_PortfolioImage_IV"-->
+                        <!--android:src="@drawable/portfolio_3"/>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View style="@style/One_Row_Strut" />
+        <LinearLayout
+            android:id="@+id/ReviewRow_ReviewDataColumn4LL"
+            style="@style/WWV">
+
+            <LinearLayout
+                android:id="@+id/ReviewRow_ReviewerIdLL"
+                style="@style/WWH">
+
+                <TextView
+                    android:id="@+id/ReviewRow_ReviewerIdTextTV"
+                    style="@style/ReviewRow_ReviewText_TV"
+                    android:layout_marginTop="5dp"
+                    android:text="id: "/>
+                <TextView
+                    android:id="@+id/ReviewRow_ReviewerIdValueTV"
+                    style="@style/ReviewRow_ReviewText_TV"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,441 @@
+<resources>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="AppTheme" parent="MaterialDrawerTheme">
+        <item name="colorPrimary">      @color/yellow       </item>
+        <item name="colorPrimaryDark">  @color/dark_brown   </item>
+
+        <!--<item name="colorPrimary">@color/material_drawer_primary</item>-->
+        <!--<item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>-->
+        <!--<item name="colorAccent">@color/material_drawer_accent</item>-->
+        <!-- MaterialDrawer specific values -->
+        <!--<item name="material_drawer_background">@color/menu_bg_color</item>-->
+        <!--<item name="material_drawer_icons">@color/material_drawer_icons</item>-->
+        <!--<item name="material_drawer_primary_text">@color/user_name_text_grey</item>-->
+        <!--<item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>-->
+        <!--<item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>-->
+        <!--<item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>-->
+        <!--<item name="material_drawer_divider">@color/material_drawer_divider</item>-->
+        <!--<item name="material_drawer_selected">@color/selected_item_orange</item>-->
+        <!--<item name="material_drawer_selected">@color/menu_item_bg_active_color</item>-->
+        <!--<item name="material_drawer_selected_text">@color/white</item>-->
+        <!--<item name="material_drawer_selected_text">@color/menu_item_active_text_color</item>-->
+
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="MM">
+        <item name="android:layout_width">  match_parent </item>
+        <item name="android:layout_height"> match_parent </item>
+    </style>
+
+    <style name="WW">
+        <item name="android:layout_width">  wrap_content </item>
+        <item name="android:layout_height"> wrap_content </item>
+    </style>
+
+    <style name="MW">
+        <item name="android:layout_width">  match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+    </style>
+
+    <style name="WM">
+        <item name="android:layout_width">  wrap_content </item>
+        <item name="android:layout_height"> match_parent </item>
+    </style>
+
+    <style name="MMH" parent="@style/MM">
+        <item name="android:orientation" > horizontal </item>
+    </style>
+
+    <style name="MMV" parent="@style/MM">
+        <item name="android:orientation" > vertical </item>
+    </style>
+
+    <style name="MWV" parent="@style/MW">
+        <item name="android:orientation" > vertical </item>
+    </style>
+
+    <style name="MWH" parent="@style/MW">
+        <item name="android:orientation"> horizontal </item>
+    </style>
+
+    <style name="WWH" parent="@style/WW">
+        <item name="android:orientation"> horizontal </item>
+    </style>
+
+    <style name="WMV" parent="@style/WM">
+        <item name="android:orientation" > vertical </item>
+    </style>
+
+    <style name="WWV" parent="@style/WW">
+        <item name="android:orientation" > vertical </item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="BaseLL" parent="@style/MMV">
+        <item name="android:background"> @color/white </item>
+    </style>
+
+    <style name="HeaderLL" parent="@style/MWH">
+        <item name="android:layout_height"> 50dp               </item>
+        <item name="android:background">    @color/light_brown </item>
+    </style>
+
+    <style name="Image_Wrap" parent="@style/WW">
+        <item name="android:padding">        5dp             </item>
+        <item name="android:layout_weight">  0               </item>
+        <item name="android:layout_gravity"> center_vertical </item>
+        <!--<item name="android:background">     @color/yellow   </item>-->
+    </style>
+
+    <style name="Standard_IV">
+        <item name="android:layout_width">   25dp            </item>
+        <item name="android:layout_height">  25dp            </item>
+        <item name="android:layout_weight">  0               </item>
+        <item name="android:layout_gravity"> center_vertical </item>
+    </style>
+
+    <style name="Strut" parent="@style/WW">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="One_Row_Strut" parent="@style/WW">
+        <item name="android:layout_height"> 20dp </item>
+        <item name="android:layout_weight"> 1    </item>
+    </style>
+
+    <style name="SetUserData_IV" parent="@style/Standard_IV">
+        <item name="android:layout_marginLeft"> 15dp                          </item>
+        <item name="android:src">               @drawable/set_user_data_white </item>
+    </style>
+
+    <style name="HeaderTitle_TV" parent="@style/WW">
+        <item name="android:textSize">       20sp            </item>
+        <item name="android:textColor">      @color/white    </item>
+        <item name="android:textStyle">      bold            </item>
+        <item name="android:layout_gravity"> center_vertical </item>
+    </style>
+
+    <style name="Find_IV" parent="@style/Standard_IV">
+        <item name="android:layout_marginRight"> 3dp                  </item>
+        <item name="android:src">                @drawable/find_white </item>
+    </style>
+
+    <style name="Back_Arrow_IV" parent="@style/Standard_IV">
+        <item name="android:layout_marginLeft">  15dp                       </item>
+        <item name="android:src">                @drawable/back_arrow_white </item>
+    </style>
+
+    <style name="InfoDialog_Theme" parent="android:Theme.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="SimpleBlackText_TV" parent="@style/WW">
+        <item name="android:textSize">7sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Executor_Image_IV">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Small_Image_IV">
+        <item name="android:layout_width">   10dp </item>
+        <item name="android:layout_height">  10dp </item>
+    </style>
+
+    <style name="VLine_Grey">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_height">fill_parent</item>-->
+        <item name="android:background">@color/h_line_grey</item>
+    </style>
+
+    <style name="HLine_Grey">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/h_line_grey</item>
+        <!--<item name="android:background">@color/light_brown</item>-->
+    </style>
+
+    <style name="TabRow_LL" parent="@style/MWH">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <!--<style name="Loading_Main_LL" parent="@style/MM">-->
+    <!--<item name="android:background"> @drawable/loading_bg </item>-->
+    <!--</style>-->
+
+    <style name="Loading_Background_IV" parent="@style/MM">
+        <item name="android:scaleType"> centerCrop                  </item>
+        <item name="android:src">       @drawable/background_orange </item>
+    </style>
+
+    <style name="Loading_AppLogo_IV">
+        <item name="android:layout_width">   213dp                             </item>
+        <item name="android:layout_height">  213dp                             </item>
+        <item name="android:layout_gravity"> center_vertical|center_horizontal </item>
+        <item name="android:src">            @drawable/app_logo_white          </item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="Main_Menu_IV" parent="@style/Standard_IV">
+        <item name="android:layout_marginLeft">  6dp                  </item>
+        <item name="android:layout_marginRight"> 6dp                  </item>
+        <item name="android:src">                @drawable/menu_white </item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="RootHashTag_SetUserData_IV" parent="@style/SetUserData_IV">
+        <item name="android:layout_marginLeft">  6dp </item>
+        <item name="android:layout_marginRight"> 6dp </item>
+    </style>
+
+    <style name="RootHashTag_HashTags_LL" parent="@style/MMV">
+        <item name="android:background">    @color/white </item>
+        <item name="android:paddingBottom"> 5dp          </item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="LicenseDialog_Main_LL" parent="@style/MMV">
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/rounded_rect_light_grey</item>
+    </style>
+
+    <style name="LicenseDialog_Header_LL" parent="@style/MWV">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="LicenseDialog_HeaderText_TV" parent="@style/MW">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">@string/license</item>
+    </style>
+
+    <style name="LicenseDialog_Buttons_LL" parent="@style/MWH">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="LicenseDialog_BTN" parent="@style/WW">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="LicenseDialog_NotAgree_TV" parent="@style/LicenseDialog_BTN">
+        <item name="android:text">@string/not_agree</item>
+    </style>
+
+    <style name="LicenseDialog_Agree_TV" parent="@style/LicenseDialog_BTN">
+        <item name="android:text">@string/agree</item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="ExecutorRow_Container_LL" parent="@style/MWV">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/rounded_rect_with_grey_stroke</item>
+    </style>
+
+    <!--<style name="ExecutorRow_Avatar_IV" parent="@style/Executor_Image_IV">-->
+        <!--&lt;!&ndash;<item name="android:layout_width">70dp</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:layout_height">70dp</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:scaleType">centerCrop</item>&ndash;&gt;-->
+        <!--<item name="android:src">@drawable/executor_1</item>-->
+    <!--</style>-->
+
+    <style name="ExecutorRow_ExecutorName_LL" parent="@style/WWV">
+        <item name="android:layout_marginLeft"> 5dp </item>
+    </style>
+
+    <style name="ExecutorRow_ExecutorName_TV" parent="@style/SimpleBlackText_TV">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/executor_name_text</item>
+    </style>
+
+    <style name="ExecutorRow_ExecutorRate_LL" parent="@style/WWV">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--<style name="ExecutorRow_ExecutorRateText_TV" parent="@style/WW">-->
+        <!--<item name="android:textSize">7sp</item>-->
+        <!--<item name="android:textColor">@color/black</item>-->
+    <!--</style>-->
+
+    <style name="ExecutorRow_ExecutorRateValue_TV" parent="@style/SimpleBlackText_TV">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <!--<item name="android:textSize">7sp</item>-->
+        <!--<item name="android:textColor">@color/black</item>-->
+    </style>
+
+    <style name="ExecutorRow_Choose_LL" parent="@style/WWV">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="ExecutorRow_ExecutorId_LL" parent="@style/WWH">
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!--<style name="ExecutorRow_ExecutorIdText_TV" parent="@style/SimpleBlackText_TV">-->
+        <!--<item name="android:layout_gravity">center_horizontal</item>-->
+        <!--<item name="android:textSize">7sp</item>-->
+        <!--<item name="android:textColor">@color/black</item>-->
+    <!--</style>-->
+
+    <style name="ExecutorRow_ExecutorChoose_LL" parent="@style/WWH">
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/rounded_rect_red</item>
+    </style>
+
+    <style name="ExecutorRow_ExecutorChoose_TV" parent="@style/WW">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/choose_text</item>
+    </style>
+
+    <style name="ExecutorRow_ExecutorAboutMeText_TV" parent="@style/WW">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">@string/about_me_text</item>
+    </style>
+
+    <style name="ExecutorRow_ExecutorAboutMeValue_TV" parent="@style/SimpleBlackText_TV">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:text">"Установку дверей делаем в день звонка 100%!!!!Профессиональная установка межкомнатных и металлических дверей!На рынке услуг мы находимся 8 лет, занимаемся обслуживанием торговых организаций, магазинов, по монтажу дверей, всем нашим заказчикам мы идём на встречу, получаем положительные отзывы о нас. Работу делаем электроинструментом. Гарантия на установку 1 год!"</item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="ExecutorsList_Executors_LL" parent="@style/MMV">
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="SelectedExecutor_Label_LL" parent="@style/MWH">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="SelectedExecutor_ExecutorData_LL" parent="@style/MWH">
+        <item name="android:padding">5dp</item>
+        <!--<item name="android:background">@color/dark_brown</item>-->
+    </style>
+
+    <style name="SelectedExecutor_Label_IV" parent="@style/WW">
+        <item name="android:layout_width">   40dp            </item>
+        <item name="android:layout_height">  40dp            </item>
+        <!--<item name="android:layout_weight">  0               </item>-->
+        <!--<item name="android:layout_gravity"> center_vertical </item>-->
+        <item name="android:scaleType">centerCrop</item>
+        <!--<item name="android:layout_marginRight"> 10dp        </item>-->
+    </style>
+
+    <style name="SelectedExecutor_ExecutorTextDataRow_LL" parent="@style/MWH">
+        <item name="android:paddingLeft"> 5dp </item>
+        <item name="android:paddingTop"> 5dp </item>
+    </style>
+
+    <style name="SelectedExecutor_ExecutorTextDataRow1_LL" parent="@style/SelectedExecutor_ExecutorTextDataRow_LL">
+        <item name="android:paddingTop"> 8dp </item>
+    </style>
+
+    <style name="SelectedExecutor_ExecutorPhone_IV" parent="@style/Small_Image_IV">
+        <item name="android:src">@drawable/phone</item>
+    </style>
+
+    <style name="SelectedExecutor_ExecutorMail_IV" parent="@style/Small_Image_IV">
+        <item name="android:src">@drawable/mail</item>
+    </style>
+
+    <style name="SelectedExecutor_ExecutorSkype_IV" parent="@style/Small_Image_IV">
+        <item name="android:src">@drawable/skype</item>
+    </style>
+
+    <style name="SelectedExecutor_ExecutorCalendar_IV" parent="@style/Small_Image_IV">
+        <item name="android:src">@drawable/calendar</item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <!--<style name="PriceRow_Container_LL" parent="@style/MWV">-->
+        <!--&lt;!&ndash;<item name="android:paddingLeft">5dp</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:paddingRight">5dp</item>&ndash;&gt;-->
+        <!--<item name="android:background">@color/dark_brown</item>-->
+    <!--</style>-->
+
+    <style name="PriceRow_Service_TV" parent="@style/WW">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    <style name="ReviewRow_ReviewDate_TV" parent="@style/WW">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="ReviewRow_ReviewerAvatar_IV" parent="@style/WW">
+        <item name="android:layout_width">17dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:src">@drawable/reviewer_avatar</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="ReviewRow_ReviewText_TV" parent="@style/WW">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:layout_marginLeft">5dp</item>-->
+        <!--<item name="android:layout_marginTop">5dp</item>-->
+    </style>
+
+    <style name="ReviewRow_PortfolioImage_IV" parent="@style/WW">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow">#fdf101</color>
+    <color name="white">#fdfdfe</color>
+    <color name="light_brown">#ca440a</color>
+    <color name="dark_brown">#511903</color>
+
+    <color name="root_hash_tag_color_0">#36b6eb</color>
+    <color name="root_hash_tag_color_1">#e740a2</color>
+    <color name="root_hash_tag_color_2">#7eb106</color>
+    <color name="root_hash_tag_color_3">#d4b927</color>
+    <color name="root_hash_tag_color_4">#990cb2</color>
+    <color name="root_hash_tag_color_5">#c85110</color>
+
+    <color name="black">#000000</color>
+    <color name="menu_grey">#e0e9ed</color>
+    <color name="h_line_grey">#e2eaeb</color>
+    <color name="executor_border_grey">#9eb8c4</color>
+    <color name="choose_executor_red">#c8302c</color>
+    <color name="text_blue">#337ace</color>
+    <color name="price_row_grey">#f7f7f7</color>
+
+    <color name="tab_border_grey">#dcdcdc</color>
+
+    <!--<color name="guarantee_blue">#0c89cf</color>-->
+    <!--<color name="discount_red">#e4355a</color>-->
+</resources>

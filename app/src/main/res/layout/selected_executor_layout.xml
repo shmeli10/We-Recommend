@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/BaseLL"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout style="@style/HeaderLL">
+
+        <LinearLayout
+            style="@style/Image_Wrap"
+            android:layout_width="60dp">
+
+            <ImageView
+                android:id="@+id/SelectedExecutor_BackIV"
+                style="@style/Back_Arrow_IV"/>
+
+        </LinearLayout>
+        <View style="@style/One_Row_Strut"/>
+        <TextView
+            android:id="@+id/SelectedExecutor_HeaderTitleTV"
+            style="@style/HeaderTitle_TV"/>
+        <View style="@style/One_Row_Strut"/>
+        <LinearLayout
+            style="@style/Image_Wrap"
+            android:layout_width="50dp">
+
+            <View style="@style/One_Row_Strut" />
+            <ImageView
+                android:id="@+id/SelectedExecutor_FindIV"
+                style="@style/Find_IV"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/Image_Wrap">
+
+            <ImageView
+                android:id="@+id/SelectedExecutor_SetUserDataIV"
+                style="@style/RootHashTag_SetUserData_IV"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/SelectedExecutor_ScrollViewSV"
+        style="@style/MW">
+
+        <LinearLayout
+            android:id="@+id/SelectedExecutor_ContainerLL"
+            style="@style/MWV">
+
+            <LinearLayout
+                android:id="@+id/SelectedExecutor_LabelLL"
+                style="@style/SelectedExecutor_Label_LL">
+
+
+                <LinearLayout
+                    android:id="@+id/SelectedExecutor_GuaranteeWrapLL"
+                    style="@style/Image_Wrap"
+                    android:layout_width="60dp"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/SelectedExecutor_GuaranteeIV"-->
+                        <!--style="@style/SelectedExecutor_Label_IV"-->
+                        <!--android:src="@drawable/guarantee" />-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/SelectedExecutor_DiscountWrapLL"
+                    style="@style/Image_Wrap"
+                    android:layout_width="60dp"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/SelectedExecutor_DiscountIV"-->
+                        <!--style="@style/SelectedExecutor_Label_IV"-->
+                        <!--android:src="@drawable/discount"/>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/SelectedExecutor_ExecutorDataHeaderLL"
+                style="@style/SelectedExecutor_ExecutorData_LL">
+
+                <LinearLayout
+                    android:id="@+id/SelectedExecutor_ExecutorImagesLL"
+                    style="@style/WWV">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/SelectedExecutor_AvatarNIV"
+                        style="@style/Executor_Image_IV" />
+                    <!--<ImageView-->
+                        <!--android:id="@+id/SelectedExecutor_LogoIV"-->
+                        <!--style="@style/Executor_Image_IV"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:src="@drawable/build_stroy_logo" />-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/SelectedExecutor_ExecutorTextDataLL"
+                    style="@style/WWV">
+
+                    <LinearLayout
+                        android:id="@+id/SelectedExecutor_ExecutorTextDataRow1LL"
+                        style="@style/SelectedExecutor_ExecutorTextDataRow1_LL">
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorNameTV"-->
+                            <!--style="@style/ExecutorRow_ExecutorName_TV" />-->
+                        <!--<View-->
+                            <!--style="@style/One_Row_Strut"-->
+                            <!--android:layout_height="8dp"/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorIdTextTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:text="id: "/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorIdValueTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:text="@string/no_value_text"/>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/SelectedExecutor_ExecutorTextDataRow2LL"
+                        style="@style/SelectedExecutor_ExecutorTextDataRow_LL" >
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ManagerNameTextTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:text="@string/your_manager_text"/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ManagerNameValueTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:layout_marginLeft="2dp"-->
+                            <!--android:text="@string/last_first_name_text"/>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/SelectedExecutor_ExecutorTextDataRow3LL"
+                        style="@style/SelectedExecutor_ExecutorTextDataRow_LL" >
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorTagsTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:text="@string/executor_tags_text"/>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/SelectedExecutor_ExecutorTextDataRow4LL"
+                        style="@style/SelectedExecutor_ExecutorTextDataRow_LL" >
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorPhoneIV"-->
+                            <!--style="@style/SelectedExecutor_ExecutorPhone_IV" />-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorPhoneTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:paddingLeft="2dp"-->
+                            <!--android:text="@string/executor_phone_text"/>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/SelectedExecutor_ExecutorTextDataRow5LL"
+                        style="@style/SelectedExecutor_ExecutorTextDataRow_LL" >
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorMailIV"-->
+                            <!--style="@style/SelectedExecutor_ExecutorMail_IV" />-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorMailTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:paddingLeft="2dp"-->
+                            <!--android:text="@string/executor_email_text"/>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/SelectedExecutor_ExecutorTextDataRow6LL"
+                        style="@style/MWV" >
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/SelectedExecutor_ExecutorTextDataRow6LL"-->
+                        <!--style="@style/SelectedExecutor_ExecutorTextDataRow_LL" >-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorSkypeIV"-->
+                            <!--style="@style/SelectedExecutor_ExecutorSkype_IV" />-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_ExecutorSkypeTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:paddingLeft="2dp"-->
+                            <!--android:text="@string/executor_skype_text"/>-->
+
+                    </LinearLayout>
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/SelectedExecutor_ExecutorTextDataRow7LL"-->
+                        <!--style="@style/SelectedExecutor_ExecutorTextDataRow_LL" >-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/SelectedExecutor_CalendarIV"-->
+                            <!--style="@style/SelectedExecutor_ExecutorCalendar_IV" />-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/SelectedExecutor_CalendarTV"-->
+                            <!--style="@style/SimpleBlackText_TV"-->
+                            <!--android:paddingLeft="2dp"-->
+                            <!--android:paddingTop="1dp"-->
+                            <!--android:text="@string/executor_job_time_text"/>-->
+
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View style="@style/HLine_Grey"/>
+            <LinearLayout
+                android:id="@+id/SelectedExecutor_ExecutorDataBodyLL"
+                style="@style/SelectedExecutor_ExecutorData_LL">
+
+                <LinearLayout
+                    android:id="@+id/SelectedExecutor_ExecutorAboutMeLL"
+                    style="@style/MWV"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:id="@+id/SelectedExecutor_ExecutorAboutMeTextTV"
+                        style="@style/ExecutorRow_ExecutorAboutMeText_TV" />
+                    <TextView
+                        android:id="@+id/SelectedExecutor_ExecutorAboutMeValueTV"
+                        style="@style/ExecutorRow_ExecutorAboutMeValue_TV" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/SelectedExecutor_ExecutorPortfolioLL"
+                    style="@style/MWV"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/SelectedExecutor_ExecutorPortfolioTextTV"
+                        style="@style/ExecutorRow_ExecutorAboutMeText_TV"
+                        android:text="@string/portfolio_text"/>
+                    <ImageView
+                        android:id="@+id/SelectedExecutor_ExecutorPortfolioIV"
+                        android:layout_width="180dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/portfolio_1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/SelectedExecutor_ExecutorDataFooterLL"
+                style="@style/SelectedExecutor_ExecutorData_LL">
+
+                <TabHost
+                    android:id="@android:id/tabhost"
+                    style="@style/WW" >
+
+                    <LinearLayout
+                        android:id="@+id/SelectedExecutor_ExecutorTabsLL"
+                        style="@style/MWV">
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            style="@style/MW" />
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            style="@style/MM">
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </TabHost>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

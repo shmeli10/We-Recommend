@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PriceRow_ContainerLL"
+    style="@style/MWV">
+
+    <View
+        style="@style/HLine_Grey"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"/>
+    <LinearLayout
+        android:id="@+id/PriceRow_PriceDataLL"
+        style="@style/TabRow_LL">
+
+        <TextView
+            android:id="@+id/PriceRow_ServiceNameTV"
+            style="@style/PriceRow_Service_TV"
+            android:text="Наименование выполняемой работы"/>
+        <View
+            style="@style/One_Row_Strut"
+            android:layout_height="8dp"/>
+        <TextView
+            android:id="@+id/PriceRow_ServicePriceTV"
+            style="@style/PriceRow_Service_TV"
+            android:text="Цена"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/PriceRow_FooterLL"
+        style="@style/WWV">
+
+    </LinearLayout>
+
+</LinearLayout>

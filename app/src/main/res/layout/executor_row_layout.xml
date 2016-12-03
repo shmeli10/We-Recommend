@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ExecutorRow_ContainerLL"
+    style="@style/ExecutorRow_Container_LL">
+
+    <LinearLayout
+        android:id="@+id/ExecutorRow_HeaderLL"
+        style="@style/MWH">
+
+        <LinearLayout
+            android:id="@+id/ExecutorRow_AvatarLL"
+            style="@style/WWV">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ExecutorRow_AvatarNIV"
+                style="@style/Executor_Image_IV" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ExecutorRow_ExecutorNameLL"
+            style="@style/ExecutorRow_ExecutorName_LL">
+
+            <TextView
+                android:id="@+id/ExecutorRow_ExecutorNameTV"
+                style="@style/ExecutorRow_ExecutorName_TV" />
+
+        </LinearLayout>
+        <View style="@style/One_Row_Strut" />
+        <LinearLayout
+            android:id="@+id/ExecutorRow_ExecutorRateLL"
+            style="@style/ExecutorRow_ExecutorRate_LL">
+
+            <TextView
+                android:id="@+id/ExecutorRow_ExecutorRateTextTV"
+                style="@style/SimpleBlackText_TV"
+                android:text="@string/rate_text" />
+            <TextView
+                android:id="@+id/ExecutorRow_ExecutorRateValueTV"
+                style="@style/ExecutorRow_ExecutorRateValue_TV"
+                android:text="5++" />
+
+        </LinearLayout>
+        <!--<View style="@style/One_Row_Strut" />-->
+        <LinearLayout
+            style="@style/ExecutorRow_Choose_LL">
+
+            <LinearLayout
+                android:id="@+id/ExecutorRow_ExecutorIdLL"
+                style="@style/ExecutorRow_ExecutorId_LL">
+
+                <TextView
+                    android:id="@+id/ExecutorRow_ExecutorIdTextTV"
+                    style="@style/SimpleBlackText_TV"
+                    android:text="id:"/>
+                <TextView
+                    android:id="@+id/ExecutorRow_ExecutorIdValueTV"
+                    style="@style/SimpleBlackText_TV"
+                    android:text="0153432"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ExecutorRow_ExecutorChooseLL"
+                style="@style/ExecutorRow_ExecutorChoose_LL">
+
+                <TextView
+                    android:id="@+id/ExecutorRow_ExecutorChooseTV"
+                    style="@style/ExecutorRow_ExecutorChoose_TV"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--<View style="@style/One_Row_Strut" />-->
+        <LinearLayout
+            android:id="@+id/ExecutorRow_ExecutorReviewLL"
+            style="@style/ExecutorRow_ExecutorRate_LL">
+
+            <TextView
+                android:id="@+id/ExecutorRow_ExecutorReviewTextTV"
+                style="@style/SimpleBlackText_TV"
+                android:text="@string/reviews_sum_text"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:id="@+id/ExecutorRow_ExecutorReviewValueTV"
+                style="@style/ExecutorRow_ExecutorRateValue_TV"
+                android:text="213" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ExecutorRow_BodyLL"
+        style="@style/MWV">
+
+        <TextView
+            android:id="@+id/ExecutorRow_ExecutorAboutMeTextTV"
+            style="@style/ExecutorRow_ExecutorAboutMeText_TV" />
+        <TextView
+            android:id="@+id/ExecutorRow_ExecutorAboutMeValueTV"
+            style="@style/ExecutorRow_ExecutorAboutMeValue_TV" />
+
+    </LinearLayout>
+
+</LinearLayout>

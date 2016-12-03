@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/BaseLL"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout style="@style/HeaderLL">
+
+        <LinearLayout
+            android:id="@+id/Main_SetUserDataWrapLL"
+            style="@style/Image_Wrap"
+            android:layout_width="90dp">
+
+            <ImageView
+                android:id="@+id/Main_SetUserDataIV"
+                style="@style/SetUserData_IV"/>
+
+        </LinearLayout>
+        <View style="@style/One_Row_Strut"/>
+        <LinearLayout
+            android:id="@+id/Main_FindWrapLL"
+            style="@style/Image_Wrap"
+            android:layout_width="100dp">
+
+            <View style="@style/One_Row_Strut" />
+            <ImageView
+                android:id="@+id/Main_FindIV"
+                style="@style/Find_IV"/>
+
+        </LinearLayout>
+        <!--<View style="@style/One_Row_Strut"/>-->
+        <LinearLayout
+            android:id="@+id/Main_MenuWrapLL"
+            style="@style/Image_Wrap" >
+            <!--android:layout_width="100dp">-->
+
+            <!--<View style="@style/One_Row_Strut" />-->
+            <ImageView
+                android:id="@+id/Main_MenuIV"
+                style="@style/Main_Menu_IV"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView style="@style/MW">
+
+        <LinearLayout
+            style="@style/MMH"
+            android:background="@color/white"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/Main_LeftRootHashTagsLL"
+                style="@style/MMV"
+                android:layout_weight="0.5">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Main_RightRootHashTagsLL"
+                style="@style/MMV"
+                android:layout_weight="0.5">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
